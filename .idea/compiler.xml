@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="1.8">
+      <module name="FStartUp.ftask_api" target="11" />
+      <module name="FStartUp.sample" target="11" />
+      <module name="FStartUp.test_lib1" target="11" />
+      <module name="FTask.ftask_api" target="11" />
+      <module name="FTask.sample" target="11" />
+      <module name="FTask.test_lib1" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
