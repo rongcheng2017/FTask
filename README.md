@@ -4,7 +4,7 @@
 # 使用
 
 配置maven:
-```grovvy
+```groovy
 
   maven {
             allowInsecureProtocol true
@@ -12,7 +12,7 @@
   
 ```
 配置Auto-Register插件依赖
-```grovvy
+```groovy
 //project的build.gradle中
  dependencies {
         classpath "com.billy.android:autoregister:1.4.2"
@@ -23,7 +23,7 @@
 
 添加依赖
 
-```grovvy
+```groovy
 //项目的build.gradle
 plugins {
     id 'com.android.application'
@@ -98,7 +98,7 @@ class InitTask : IFTask<String> {
 ```
 
 2. FTaskManager自己实现需要处理的功能
-```grovvy
+```kotlin
 class App : Application() {
     override fun onCreate() {
         super.onCreate()
