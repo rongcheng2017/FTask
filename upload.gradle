@@ -1,0 +1,32 @@
+publishing {
+    publications {
+        release(MavenPublication) {
+            {
+//                from components.release
+
+                groupId = 'com.rongcheng'
+                artifactId = 'ftask'
+                version = '1.0'
+            }
+        }
+        debug(MavenPublication) {
+            {
+//                from components.debug
+
+                groupId = 'com.rongcheng'
+                artifactId = 'ftask-debug'
+                version = '1.0'
+            }
+        }
+    }
+    repositories {
+        maven {
+            name = 'release'
+            url = "http://maven.geelib.360.cn:8360/nexus/repository/torchsdk/"
+            credentials {
+                username 'torchsdk'
+                password 'Tsdk20200414'
+            }
+        }
+    }
+}

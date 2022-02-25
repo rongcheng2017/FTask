@@ -55,8 +55,10 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-    implementation project(':ftask_api')
-    kapt kapt(project(':ftask_compiler',))
+//    implementation project(':ftask_api')
+//    kapt kapt(project(':ftask_compiler',))
+    implementation "com.rongcheng:ftask-api:$VERSION_NAME"
+    kapt "com.rongcheng:ftask-compiler:$VERSION_NAME"
     implementation project(':test_lib1')
 
 

@@ -111,11 +111,12 @@ class FTaskAnnotationProcessor : AbstractProcessor() {
             if (result[0] > 0) {
                 val taskCn = element.asClassName()
                 loadTaskMethodBuilder.addStatement(
-                    "%N.add(%T(%S,%S,%T()))",
+                    "%N.add(%T(%S,%S,%S,%T()))",
                     "fTaskInfoList",
                     FTaskInfo::class.java,
                     task.name,
                     task.type,
+                    taskCn,
                     taskCn
                 )
             }

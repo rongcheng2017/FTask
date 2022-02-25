@@ -8,6 +8,8 @@ java {
     targetCompatibility = JavaVersion.VERSION_1_8
 }
 dependencies {
-    implementation project(':ftask_annotations')//https://square.github.io/kotlinpoet/
+    implementation "com.rongcheng:ftask-annotation:$VERSION_NAME"
+    //https://square.github.io/kotlinpoet/
     implementation("com.squareup:kotlinpoet:1.10.2")
 }
+apply from: rootProject.file('gradle/publish.gradle')

@@ -4,6 +4,9 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
+        maven {
+            allowInsecureProtocol true
+            url "http://maven.geelib.360.cn/nexus/repository/mobiledj/" }
     }
 }
 dependencyResolutionManagement {
@@ -11,6 +14,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            allowInsecureProtocol true
+            url "http://maven.geelib.360.cn/nexus/repository/mobiledj/" }
     }
 }
 rootProject.name = "FTask"
